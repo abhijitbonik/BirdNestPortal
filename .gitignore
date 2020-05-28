@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.env
+venv/
+media/profile
+media/course
+media/images
+media/audio
+media/video
+media/CACHE
+
+# SQLite database files
+
+*.sqlite3
+*.swn
+*.swo
+*.swp
+*.swm
+
+.vscode/
+*.pyc
