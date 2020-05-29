@@ -48,6 +48,8 @@ class OplmMedia(models.Model):
         ('VIDEO', 'Video'),
     )
     allowed_extensions = ['mp4', 'mp3',  'jpeg', 'jpg']
+    name = models.CharField(max_length=100)
+    description = models.TextField(null=True)
     mediatype = models.CharField(choices=media_types, max_length=10, default='VIDEO')	
     mediafile = models.FileField(null=True,upload_to=get_file_path, validators=[FileExtensionValidator(allowed_extensions)])
     remotelink = models.TextField(null=True)
@@ -67,7 +69,7 @@ class OplmMedia(models.Model):
         ordering = ('mediatype', )
 
     def __str__(self):
-        return self.mediafile.name
+        return self.name
 
     def get_filename_extension(self):
         name, extension = os.path.splitext(self.mediafile.name)
