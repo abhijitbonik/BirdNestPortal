@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BirdNest Learning</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    {% block metatag %}
+    {% endblock %}
+    {% block cssblock %}
+    {% endblock %}
+    {% block jsblockheader %}
+    {% endblock %}
+</head>
+
+<body>
+    
+    {% block content %}
+    {% endblock %}       
+   
+
+    {% block jsblockfooter %}
+    {% endblock %}
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    //The first argument are the elements to which the plugin shall be initialized
+    //The second argument has to be at least a empty object or a object with your desired options
+    OverlayScrollbars(document.querySelectorAll("body"), { });
+    });
+    </script>        
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metatag %}
+<base href="/">
+{% endblock %}
+
+{% block cssblock %}
+<link rel="stylesheet" href="{% static 'core/styles.css' %}">
+{% endblock %}
+ 
+{% block content %}
+  <app-root></app-root>
+{% endblock %}
+
+{% block jsblockfooter %}
+<script src="{% static 'core/runtime-es2015.js' %}" type="module"></script>
+<script src="{% static 'core/runtime-es5.js' %}" nomodule defer></script>
+<script src="{% static 'core/polyfills-es5.js' %}" nomodule defer></script>
+<script src="{% static 'core/polyfills-es2015.js' %}" type="module"></script>
+<script src="{% static 'core/main-es2015.js' %}" type="module"></script>
+<script src="{% static 'core/main-es5.js' %}" nomodule defer></script>
+{% endblock %}
