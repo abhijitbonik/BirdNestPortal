@@ -1,13 +1,29 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Frontend</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BirdNest Learning</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <base href="/">
 <link rel="stylesheet" href="styles.css"></head>
+
 <body>
-  <app-root></app-root>
+    
+     <app-root></app-root>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    //The first argument are the elements to which the plugin shall be initialized
+    //The second argument has to be at least a empty object or a object with your desired options
+    OverlayScrollbars(document.querySelectorAll("body"), { });
+    });
+    </script>        
 <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+
 </html>
