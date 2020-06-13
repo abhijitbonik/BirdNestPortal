@@ -19,7 +19,7 @@ export class VideoDetailComponent implements OnInit, OnDestroy {
       sources: {
           src: string,
           type: string,
-      }[],
+      },
   };
   player: videojs.Player;
 
@@ -43,10 +43,10 @@ export class VideoDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-
-    
-    // You can also use categoryId.previousValue and 
-    // categoryId.firstChange for comparing old and new values
-
+    if (this.player) {
+    //this.player.state.options.sources.url =c;
+    this.player.src({src:changes.oplm.currentValue.url, type: 'video/mp4'})
+    }
+    //console.log(this.player)
 }
 }
