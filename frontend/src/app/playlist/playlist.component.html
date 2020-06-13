@@ -1,0 +1,25 @@
+<div class="box related-list">
+          <p class="autoplay">
+            <span class="autoplay-title">Up next</span>
+            <span class="autoplay-toggle">
+              Autoplay
+              <i class="fa fa-info-circle"></i>
+            </span>
+          </p>
+          <article class="media related-card" *ngFor="let oplm of oplms">
+            <div class="media-left">
+              <figure class="image">
+                <li (click)="oplmevent(oplm)"><img src="http://placehold.it/120x90" alt="Image" ></li>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <span class="video-title" >{{oplm.name}}</span>
+                  <span class="video-account">asasdas</span>
+                  <span class="video-views">239 views</span>
+                </p>
+              </div>
+            </div>
+          </article>
+</div>

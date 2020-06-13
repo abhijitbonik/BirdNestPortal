@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
+import {OplmService} from '../oplm.service'
+import {Oplm} from '../oplm';
 
 @Component({
   selector: 'app-watch',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WatchComponent implements OnInit {
 
-  constructor() { }
+  selectedOplm: Oplm;
+  oplms: Oplm[];
 
-  ngOnInit(): void {
+  constructor(private oplmService: OplmService, private messageService: MessageService) { }
+
+  ngOnInit() {
+    this.getOplms();
+    this.getinitialOplms(this.oplms[0])
+  }
+
+  onSelect(oplm: Oplm): void {
+    this.selectedOplm = oplm;
+    this.messageService.add(`Selected Content=${oplm.name}`);
+  }
+
+  getOplms(): void {
+    this.oplmService.getOplms()
+        .subscribe(oplms => this.oplms = oplms);
+  }
+
+  getinitialOplms(oplm: Oplm): void {
+    this.selectedOplm = oplm;
   }
 
 }

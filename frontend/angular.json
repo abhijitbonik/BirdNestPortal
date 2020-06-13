@@ -26,6 +26,8 @@
             "styles": [
               "node_modules/bulma/css/bulma.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/video.js/dist/video-js.css",
+              "node_modules/@videojs/themes/dist/fantasy/index.css",
               "src/styles.css"
             ],
             "scripts": []
