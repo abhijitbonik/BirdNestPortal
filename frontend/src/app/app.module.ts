@@ -9,6 +9,10 @@ import { VideoDetailComponent } from './video-detail/video-detail.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { CommentComponent } from './comment/comment.component';
 import { MessagesComponent } from './messages/messages.component';
+import { CourseComponent } from './course/course.component';
+import { CourseTimelineComponent } from './course-timeline/course-timeline.component';
+import { CourseBlogComponent } from './course-blog/course-blog.component';
+import { CourseCodeComponent } from './course-code/course-code.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { MessagesComponent } from './messages/messages.component';
     VideoDetailComponent,
     PlaylistComponent,
     CommentComponent,
-    MessagesComponent
+    MessagesComponent,
+    CourseComponent,
+    CourseTimelineComponent,
+    CourseBlogComponent,
+    CourseCodeComponent
   ],
   imports: [
     BrowserModule,

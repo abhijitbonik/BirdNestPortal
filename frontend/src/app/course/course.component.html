@@ -1,0 +1,63 @@
+<div class="container">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    <section class="articles">
+        <div class="column is-8 is-offset-2">
+            <!-- START ARTICLE -->
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-center">
+                            <img src="http://www.radfaces.com/images/avatars/daria-morgendorffer.jpg" class="author-image" alt="Placeholder image">
+                        </div>
+                        <div class="media-content has-text-centered">
+                            <p class="title article-title">Sapien eget mi proin sed 🔱</p>
+                            <p class="subtitle is-6 article-subtitle">
+                                <a href="#">@daria</a> on February 17, 2018
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs is-toggle is-fullwidth" #tabs>
+                            <ul>
+                                <li [class.is-active]="time === true" (click)="onSelectTimeline()">
+                                <a >
+                                    <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                                    <span>Timeline</span>
+                                </a>
+                                </li>
+                                <li [class.is-active]="blog === true" (click)="onSelectBlog()">
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-blog" aria-hidden="true"></i></span>
+                                    <span>Blog</span>
+                                </a>
+                                </li>
+                                <li [class.is-active]="code === true" (click)="onSelectCode()">
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-code" aria-hidden="true"></i></span>
+                                    <span>Code</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a>
+                                    <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                                    <span>Videos</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="content article-body">   
+                    <app-course-timeline *ngIf="time"></app-course-timeline>
+                    <app-course-blog *ngIf="blog"></app-course-blog>
+                    <app-course-code *ngIf="code"></app-course-code>
+                    </div>
+                </div>
+            </div>
+            <!-- END ARTICLE -->
+            
+        </div>
+
+    </section>
+</div>

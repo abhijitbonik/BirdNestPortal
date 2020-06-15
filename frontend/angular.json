@@ -28,6 +28,7 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/video.js/dist/video-js.css",
               "node_modules/@videojs/themes/dist/fantasy/index.css",
+              "node_modules/bulma-timeline/dist/css/bulma-timeline.min.css",
               "src/styles.css"
             ],
             "scripts": []
