@@ -13,6 +13,7 @@ import { CourseComponent } from './course/course.component';
 import { CourseTimelineComponent } from './course-timeline/course-timeline.component';
 import { CourseBlogComponent } from './course-blog/course-blog.component';
 import { CourseCodeComponent } from './course-code/course-code.component';
+import { MenusComponent } from './menus/menus.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CourseCodeComponent } from './course-code/course-code.component';
     CourseComponent,
     CourseTimelineComponent,
     CourseBlogComponent,
-    CourseCodeComponent
+    CourseCodeComponent,
+    MenusComponent
   ],
   imports: [
     BrowserModule,
