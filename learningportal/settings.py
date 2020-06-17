@@ -27,8 +27,8 @@ SECRET_KEY = uuid.uuid4()
 #DEBUG = config('DEBUG', cast=bool)
 DEBUG = True
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-
+#ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = [*]
 
 # Application definition
 
