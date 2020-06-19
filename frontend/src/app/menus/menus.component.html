@@ -1,16 +1,16 @@
 <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="../">
+                <a class="navbar-item" href="../" >
                         <img src="../images/bulma.png" alt="{{title}}">
                     </a>
-                <span class="navbar-burger burger" data-target="navbarMenu">
+                <span class="navbar-burger burger" data-target="navbarMenu" (click)="toggleNavbar()" #navBurger>
                         <span></span>
                 <span></span>
                 <span></span>
                 </span>
             </div>
-            <div id="navbarMenu" class="navbar-menu">
+            <div id="navbarMenu" class="navbar-menu" #navMenu>
                 <div class="navbar-item has-dropdown is-hoverable is-mega">
                             <div class="navbar-link">
                             Category
